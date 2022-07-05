@@ -70,3 +70,18 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+###################################################################################
+
+# My gems
+# SASS
+gem "sassc-rails"
+
+# Font awesome
+gem "font-awesome-sass", "~> 6.1"
+
+# Simple Form
+gem "simple_form", github: "heartcombo/simple_form"
+
+# AutoPrefixer
+gem "autoprefixer-rails"
