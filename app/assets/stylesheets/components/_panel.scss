@@ -1,0 +1,126 @@
+
+.panels {
+  min-height: 60vh;
+  overflow: hidden;
+  display: flex;
+}
+
+.panel {
+  background: #6B0F9C;
+  box-shadow: inset 0px 0px 20px 20px #212529;
+  color: white;
+  text-align: center;
+  align-items: center;
+  transition:
+        font-size 1s ease,
+        flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11);
+
+  font-size: 20px;
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+    .panel1 {
+      background-color: #212529;
+      transition: background-image 0.5s ease;
+      background-image: url(gris.jpeg);
+
+
+
+      &:hover{
+        background-image: url(comida1.jpeg);
+    }
+    }
+    .panel2 {
+      background-color: #212529;
+      transition: background-image 0.5s ease;
+      background-image: url(gris.jpeg);
+
+      &:hover{
+      background-image:url(mati1.jpeg);
+      }
+
+
+    }
+    .panel3 {
+      background-color: #212529;
+      transition: background-image 0.5s ease;
+      background-image: url(gris.jpeg);
+
+      &:hover{
+      background-image:url(comida2.jpeg);
+      }
+
+
+    }
+    .panel4 {
+      background-color: #212529;
+      transition: background-image 0.5s ease;
+      background-image: url(gris.jpeg);
+
+      &:hover{
+      background-image:url(mati2.jpeg);
+      }
+    }
+    //#0E0000
+
+    .panel > * {
+      margin: 0;
+      width: 100%;
+      transition: transform 2s;
+      flex: 1 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .panel > *:first-child {
+      transform: translateY(-100%);
+    }
+    .panel.open-active > *:first-child {
+      transform: translateY(30%);
+    }
+
+    .panel > *:last-child {
+      transform: translateY(100%);
+    }
+
+    .panel.open-active > *:last-child {
+      transform: translateY(-34%);
+    }
+
+    .panel > *:nth-child(2)  {
+      font-size: 120px;
+      transition: font-size 1s ease;
+
+    }
+
+    .panel.open-active > *:nth-child(2) {
+      font-size: 180px;
+    }
+
+    .panel p {
+      text-transform: uppercase;
+      font-family: Arial, Helvetica, sans-serif;
+      text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+      font-size: 2em;
+    }
+
+    .panel p:nth-child(2) {
+      font-size: 6em;
+    }
+
+    .panel.open {
+      font-size: 40px;
+      flex: 1.05;
+    }
+
+    .panel-foto1{
+
+      background-image:url(comida1.jpeg);
+    }

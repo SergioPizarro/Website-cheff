@@ -12,10 +12,10 @@
 
   <body>
 
-   <%= render "shared/navbar_top" %>
+    <%= render "shared/navbar_top" %>
 
     <%= yield %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+    <script src="../../javascript/controllers/application.js"></script>
   </body>
 </html>
-
-
