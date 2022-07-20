@@ -1,7 +1,7 @@
 // Specific CSS for your home-page
 html {
   box-sizing: border-box;
-  background: #212529;
+  background-color: #212529;
   font-family: 'helvetica neue';
   font-size: 20px;
   font-weight: 200;
@@ -10,9 +10,14 @@ html {
 
 body{
   margin:0;
+  background: rgb(33, 37, 41);
 
 }
 
 *, *:before, *:after{
 box-sizing: inherit;
+}
+
+.container {
+  display: flex;
 }
