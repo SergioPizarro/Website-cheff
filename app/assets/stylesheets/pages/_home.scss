@@ -1,16 +1,16 @@
 // Specific CSS for your home-page
+
 html {
   box-sizing: border-box;
   background-color: #212529;
   font-family: 'helvetica neue';
-  font-size: 20px;
-  font-weight: 200;
-
 }
 
 body{
   margin:0;
+  background-color: black;
   background: rgb(33, 37, 41);
+
 
 }
 
@@ -19,6 +19,7 @@ box-sizing: inherit;
 }
 
 .container-biography {
+  background-color: black;
   display: flex;
   flex-direction: row;
 }
